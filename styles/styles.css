@@ -116,13 +116,18 @@ h2 {
 }
 
 .contact__text {
-  max-width: 51ch;
   margin-inline: auto;
   line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+.contact__text--email {
+  max-width: 54ch;
 }
 
 .contact__text--center {
   text-align: center;
+  margin-inline: auto;
 }
 
 .contact__email {
@@ -179,6 +184,16 @@ h2 {
   background: orange;
 }
 
+.research {
+  min-height: calc(100vh - 3rem);
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.research__welcome {
+  margin-block: auto;
+}
+
 .research__header--welcome {
   max-width: fit-content;
   margin-inline: auto;
@@ -194,21 +209,10 @@ h2 {
   max-width: fit-content;
 }
 
-.research__email {
-  color: black;
-  transition: 150ms ease;
-}
-
-.research__email:hover {
-  color: orange;
-}
-
 .research__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  margin: 1rem;
-  flex: 1;
 }
 
 .research__description {
