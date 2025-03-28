@@ -51,10 +51,10 @@
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__item">
-            <a href="index.html" class="header__link">Research</a>
+            <a href="/index.html" class="header__link">Home</a>
           </li>
           <li class="header__item">
-            <a href="../pages/about.html" class="header__link">About</a>
+            <a href="../pages/research.html" class="header__link">Research</a>
           </li>
           <li class="header__item">
             <a href="../pages/contact.html" class="header__link">Contact</a>
@@ -62,51 +62,58 @@
         </ul>
       </nav>
     </header>
-    <main class="research">
-      <section class="research__welcome">
-        <h1 class="research__header--welcome">Dissertation Research</h1>
+    <main>
+      <section class="intro">
+        <div class="intro__grid">
+          <!-- <div class="intro__container"> -->
+          <div class="intro__item intro__portrait">
+            <picture>
+              <source
+                srcset="/images/daly-portrait-mobile.jpg"
+                media="(max-width: 768px)"
+              />
+              <img
+                src="/images/daly-portrait.jpg"
+                alt="Michael Daly"
+                class="intro__photo"
+                width="600"
+                height="auto"
+              />
+            </picture>
+          </div>
+          <section class="intro__item intro__about">
+            <div class="intro__header">
+              <h1 class="intro__name">Hi, I'm Mike!</h1>
+            </div>
+            <div class="intro__summary">
+              <p class="intro__text">
+                I'm a 3rd year doctoral student here at University of the
+                Pacific and I also work in the Graduate Admissions Office. I
+                have created this website to share a little about myself and my
+                research project on first-generation students attending UOP.
+              </p>
+              <div class="intro__text">
+                I'm a proud Californian and an even prouder first-gen college
+                graduate. Everyday I'm reminded in some way about how a college
+                education opened many doors and allowed me so many opportunities
+                to both give back and pay it forward.
+              </div>
+              <div class="intro__text">
+                I also clearly remember my experiences as a new first-gen
+                student struggling to successfully navigate the college
+                landscape, balance work and school, and figuring out how to pay
+                for all of my school and living expenses. It's from this
+                experience and my desire to make it better for today's first-gen
+                students that I chose to pursue my research study. Click on the
+                "Research" tab above to learn more.
+              </div>
+            </div>
+          </section>
+          <!-- </div> -->
+        </div>
       </section>
-      <div class="research__grid">
-        <section class="research__topic">
-          <h2 class="research__header research__header--col1">Header</h2>
-          <div class="research__summary">
-            <p class="research__description">
-              I am a first-gen college graduate researching how the university
-              can help elevate our first-year, first-gen students' sense of
-              belonging, connection to the campus, and their learning.
-            </p>
-            <p class="research__description">
-              I am seeking first-year, first-gen students, and those who have
-              completed their first year, to participate in a either a
-              confidential focus group, interview, or online survey during the
-              Spring 2025 semester. My goal is to learn about their experiences
-              - the good, and the not-so-good.
-            </p>
-          </div>
-        </section>
-        <section class="research__topic">
-          <h2 class="research__header research__header--col2">Header</h2>
-          <div class="research__description">
-            I am seeking first-year, first-gen students, and those who have
-            completed their first year, to participate in a either a
-            confidential focus group, interview, or online survey during the
-            Spring 2025 semester. My goal is to learn about their experiences -
-            the good, and the not-so-good.
-          </div>
-        </section>
-        <section class="research__topic research__topic--row">
-          <h2 class="research__header">Header</h2>
-          <div class="research__description">
-            I am seeking first-year, first-gen students, and those who have
-            completed their first year, to participate in a either a
-            confidential focus group, interview, or online survey during the
-            Spring 2025 semester. My goal is to learn about their experiences -
-            the good, and the not-so-good.
-          </div>
-        </section>
-      </div>
+      <footer class="footer"></footer>
     </main>
-    <footer class="footer"></footer>
     <script
       src="https://kit.fontawesome.com/89300977dc.js"
       crossorigin="anonymous"
