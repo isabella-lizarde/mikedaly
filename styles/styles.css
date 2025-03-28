@@ -56,7 +56,7 @@ h2 {
   justify-content: center;
   align-content: center;
   margin-inline: auto;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .intro__about {
@@ -64,7 +64,7 @@ h2 {
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
   max-width: 90%;
-  margin-inline: auto;
+  margin-inline-end: auto;
 }
 
 .intro__header {
@@ -213,13 +213,17 @@ h2 {
 }
 
 .research__header {
-  font-size: clamp(1.6rem, 3vw, 1.5rem);
+  font-size: clamp(1.4rem, 3vw, 1.55rem);
   text-align: center;
   margin-inline: auto;
 }
 
+.research__header--list {
+  font-size: clamp(1.2rem, 1.7vw, 1.3rem);
+}
+
 .research__container {
-  gap: 0.5rem;
+  gap: 1rem;
   margin-block-start: 1rem;
   margin-inline-start: 1rem;
   display: grid;
