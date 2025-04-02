@@ -452,6 +452,16 @@ button {
   margin-block-end: 1rem;
 }
 
+.footer__developer {
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer__developer:hover {
+  color: orange;
+}
+
 @media (width <= 1000px) {
   .research {
     margin-block: 1.5rem;
