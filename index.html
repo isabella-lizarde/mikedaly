@@ -46,24 +46,24 @@
     </script>
   </head>
   <body>
-    <header class="header">
-      <h1 class="header__name">M.D</h1>
+    <header class="header" id="header">
+      <h1 class="header__name">Mike Daly</h1>
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__item">
-            <a href="/index.html" class="header__link">Home</a>
+            <a href="#intro" class="header__link">Home</a>
           </li>
           <li class="header__item">
-            <a href="../pages/research.html" class="header__link">Research</a>
+            <a href="#research" class="header__link">Research</a>
           </li>
           <li class="header__item">
-            <a href="../pages/contact.html" class="header__link">Contact</a>
+            <a href="#contact" class="header__link">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="intro">
+      <section class="intro section" id="intro">
         <div class="intro__grid">
           <div class="intro__item intro__portrait">
             <picture>
@@ -82,7 +82,7 @@
           </div>
           <section class="intro__item intro__about">
             <div class="intro__header">
-              <h1 class="intro__name">Hi, I'm Mike!</h1>
+              <h2 class="intro__name">Hi, I'm Mike Daly!</h2>
             </div>
             <div class="intro__summary">
               <p class="intro__text">
@@ -106,12 +106,156 @@
                 students that I chose to pursue my research study. Click on the
                 "Research" tab above to learn more.
               </div>
+              <div class="intro__linkedin">
+                <a
+                  href="https://www.linkedin.com/in/michael-daly-ba64563/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="intro__icon fa-brands fa-linkedin"></i>
+                </a>
+              </div>
             </div>
           </section>
         </div>
       </section>
-      <footer class="footer"></footer>
+      <section class="research section" id="research">
+        <div class="research__welcome">
+          <h3 class="research__header--welcome">My Research Study</h3>
+        </div>
+        <section class="research__topic research__topic--responsive">
+          <h4 class="research__header research__header--col1">
+            Research Topic
+          </h4>
+          <div class="research__container">
+            <div class="research__summary research__summary-topic">
+              <p class="research__description">
+                Improving the college experience and outcomes of
+                first-generation college students through participation in
+                high-impact education practices.
+              </p>
+            </div>
+            <div class="research__summary research__summary-topic">
+              <p class="research__header--list">
+                Why am I doing research on first-gen college students?
+              </p>
+              <ol class="research__list">
+                <li class="research__item">
+                  I am a first-generation college graduate.
+                </li>
+                <li class="research__item">
+                  First-gen students represent 30% to 50% of all college
+                  students in the United States.
+                </li>
+                <li class="research__item">
+                  Research shows that, as a group, first-gen students are more
+                  likely to take longer to graduate or not finish their college
+                  programs.
+                </li>
+                <li class="research__item">
+                  Through my research, I want to learn how the University can
+                  improve the experiences and the outcomes of first-gen college
+                  students.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </section>
+        <section class="research__plan section">
+          <h4 class="research__header research__header--col2">
+            My Research Plan
+          </h4>
+          <div class="research__container">
+            <div class="research__summary research__summary--plan">
+              <p class="research__description">
+                Throughout the Spring, Summer, and Fall of 2025, I plan to
+                connect with first-generation students enrolled at University of
+                the Pacific through focus groups, an online survey, and
+                individual interviews over Zoom.
+              </p>
+              <p class="research__description">
+                I want to gather the voices, experiences, and insights of what
+                it's like to be a first-gen student at Pacific and use that
+                knowledge to recommend how the University might be able to more
+                effectively provide support for helping more to have positive
+                learning and social experiences, and continue their efforts to
+                graduate on time.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="research__closing">
+          <p class="research__description">
+            If you are a full-time, undergraduate, first-generation student at
+            University of the Pacific, please consider lending your voice to
+            this study by sending me a message through my "Contact" page.
+          </p>
+          <p class="research__thanks">Thank you! Sincerely,</p>
+          <picture class="research__signature">
+            <img
+              src="/images/daly-signature.png"
+              alt="Michael Daly"
+              class="research__photo"
+              width="600"
+              height="auto"
+            />
+          </picture>
+        </section>
+      </section>
+      <section class="contact section" id="contact">
+        <div class="contact__grid">
+          <div class="contact__container">
+            <h2 class="contact__header">Get in touch.</h2>
+            <div class="contact__message">
+              <p class="contact__text contact__text--email">
+                Feel free to reach out to me using the contact form or via
+                <a id="contact__email" class="contact__email">Email</a>.
+              </p>
+              <p class="contact__text contact__text--center">
+                I look forward to hearing from you!
+              </p>
+            </div>
+          </div>
+          <div class="contact__container--form">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              class="contact__form"
+            >
+              <input
+                type="hidden"
+                name="subject"
+                value="New message from %{formName}"
+              />
+              <p>
+                <input type="hidden" name="form-name" value="contact" />
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <a href="#header" class="footer__top">
+          <p class="footer__text">Back to top</p>
+        </a>
+        <p class="footer__credit">
+          Designed and developed by Isabella Lizarde 2025
+        </p>
+      </footer>
     </main>
+    <script src="../js/script.js"></script>
     <script
       src="https://kit.fontawesome.com/89300977dc.js"
       crossorigin="anonymous"
