@@ -74,6 +74,8 @@ button {
 }
 
 .intro {
+  max-width: 1800px;
+  /* max-width: 85%; */
   margin-inline: auto;
   margin-block: auto;
 }
@@ -91,33 +93,36 @@ button {
 
 .intro__grid {
   display: grid;
-  max-width: 90%;
+  max-width: 85%;
   min-height: calc(100vh - 3rem);
-  grid-template-columns: 1.5fr 2fr;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-content: center;
   margin-inline: auto;
   position: relative;
+  gap: 1.5rem;
 }
 
 .intro__about {
-  max-width: 85%;
-  justify-self: flex-end;
+  justify-self: center;
   align-self: center;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .intro__header {
   font-size: clamp(1.5rem, 2.5vw, 2.3rem);
   text-align: center;
   margin-block-end: 1rem;
+  white-space: nowrap;
 }
 
 .intro__summary {
   display: flex;
   flex-direction: column;
-  justify-self: flex-end;
-  font-size: clamp(1rem, 1.8vw, 1.2rem);
-  gap: 1rem;
+  /* justify-self: flex-end; */
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  gap: 1.5rem;
 }
 
 .intro__photo {
@@ -127,8 +132,8 @@ button {
 }
 
 .intro__portrait {
-  justify-self: flex-end;
-  align-self: flex-end;
+  justify-self: center;
+  align-self: center;
 }
 
 .intro__linkedin {
@@ -148,24 +153,18 @@ button {
 }
 
 .contact {
-  max-width: 90%;
-  display: flex;
-  margin-block-start: 5rem;
-  margin-block-end: 2rem;
-  /* max-height: 100vh; */
+  max-width: 1800px;
+  margin-block: 5rem;
   align-content: center;
-  /* justify-content: center; */
-  justify-self: center;
   font-size: clamp(1rem, 2vw, 1.2rem);
   margin-inline: auto;
 }
 
 .contact__grid {
   display: grid;
-  /* min-height: 100%; */
-  grid-template-columns: 1fr 2fr;
-  margin: 1rem;
-  align-content: center;
+  max-width: 1800px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-inline: auto;
   gap: 1rem;
 }
 
@@ -175,7 +174,8 @@ button {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 3fr;
   gap: 1rem;
-  margin-inline-start: auto;
+  justify-self: center;
+  margin-block: auto;
 }
 
 .contact__header {
@@ -190,6 +190,7 @@ button {
   margin-inline: auto;
   min-height: calc(100% - 5.5rem);
   text-align: center;
+  hyphens: auto;
 }
 
 .contact__text {
@@ -206,12 +207,9 @@ button {
   text-decoration: none;
 }
 
-.contact__container--form {
-  justify-items: flex-end;
-}
-
 .contact__form {
-  min-width: 80%;
+  min-width: 100%;
+  justify-self: center;
   padding: 20px;
   background: #f9f9f9;
   border-radius: 8px;
@@ -288,7 +286,8 @@ button {
 
 .research__topic {
   grid-column: span 4;
-  max-width: 65%;
+  max-width: 1200px;
+  margin-inline: auto;
   justify-self: center;
   align-content: center;
   background: #fcfcff;
@@ -299,7 +298,8 @@ button {
 
 .research__plan {
   grid-column: span 4;
-  max-width: 65%;
+  max-width: 1200px;
+  margin-inline: auto;
   justify-self: center;
   align-content: center;
   background: #fcfcff;
@@ -312,10 +312,16 @@ button {
   gap: 1rem;
   margin-block-start: 1rem;
   line-height: 1.5;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.research__list li::marker {
+  font-weight: bold;
 }
 
 .research__summary {
-  max-height: fit-content;
+  /* max-height: fit-content; */
 }
 
 .research__description {
@@ -328,8 +334,6 @@ button {
   max-width: 65%;
   justify-content: center;
   margin-inline: auto;
-  /* align-self: center; */
-  /* margin-inline: auto; */
 }
 
 .research__thanks {
@@ -337,7 +341,6 @@ button {
   max-width: 15ch;
   margin-block-start: 3rem;
   margin-block-end: 1.5rem;
-  /* margin-inline: auto; */
 }
 
 .research__photo {
@@ -398,10 +401,6 @@ button {
     display: block;
     font-size: 1.2rem;
   }
-
-  /* .research__topic--responsive {
-    min-height: 100%;
-  } */
 }
 
 @media (width <= 882px) {
@@ -435,14 +434,12 @@ button {
     flex-direction: column;
     margin-inline-end: 1rem;
     display: none;
-    opacity: 0;
-    transition: opacity 1s ease-out, transform 1s ease-out;
   }
 
   .header__list.show {
-    opacity: 1;
     display: flex;
     flex-direction: row;
+    padding-inline-start: 0.5rem;
     gap: 1rem;
   }
 
@@ -482,6 +479,16 @@ button {
 
   .research__header {
     font-size: 1.7rem;
+  }
+
+  .research__list {
+    padding-inline-start: 1rem;
+  }
+
+  .research__topic,
+  .research__plan {
+    padding: 2rem;
+    /* border: 1px solid blue; */
   }
 
   .intro {
