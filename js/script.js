@@ -21,3 +21,10 @@ const observer = new IntersectionObserver(
 );
 
 sections.forEach((section) => observer.observe(section));
+
+const displayNavBar = document.querySelector(".header__list");
+const navBarIcon = document.querySelector(".header__icon");
+
+navBarIcon.addEventListener("click", function () {
+  displayNavBar.classList.toggle("show");
+});
