@@ -400,7 +400,8 @@ button {
 
 @media (width <= 882px) {
   .header {
-    margin-inline: 0.5rem;
+    margin-inline-start: 1.5rem;
+    margin-inline-end: 0rem;
   }
   .header__nav {
     display: flex;
