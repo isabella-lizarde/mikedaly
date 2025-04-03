@@ -75,7 +75,6 @@ button {
 
 .intro {
   max-width: 1800px;
-  /* max-width: 85%; */
   margin-inline: auto;
   margin-block: auto;
 }
@@ -120,7 +119,7 @@ button {
 .intro__summary {
   display: flex;
   flex-direction: column;
-  /* justify-self: flex-end; */
+  margin-inline: 2rem;
   font-size: clamp(1rem, 1.4vw, 1.2rem);
   gap: 1.5rem;
 }
