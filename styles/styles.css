@@ -453,7 +453,6 @@ button {
   }
 
   .intro__portrait {
-    /* margin: 2rem; */
     justify-self: center;
     align-self: center;
   }
@@ -499,14 +498,14 @@ button {
     justify-content: space-around;
   }
 
-  /* .intro__photo {
-    max-width: 350px;
-  } */
+  .intro__photo {
+    margin-block-start: 1rem;
+  }
 
   .contact {
     display: flex;
     justify-self: center;
-    /* align-self: center; */
+    margin-inline: auto;
   }
 
   .contact__grid {
