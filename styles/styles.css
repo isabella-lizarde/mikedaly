@@ -1,3 +1,6 @@
+:root {
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -5,11 +8,11 @@
 
 html,
 body {
-  background: #faf8f7;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
   font-family: "Assistant", sans-serif;
+  background: #faf8f7;
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -403,13 +406,12 @@ button {
 
 @media (width <= 882px) {
   .header {
-    margin-inline: 1rem;
+    margin-inline: 0.5rem;
   }
   .header__nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* margin-inline: 0.5rem; */
   }
 
   .header__icon {
@@ -499,7 +501,6 @@ button {
   .contact {
     display: flex;
     justify-content: center;
-    /* margin-block-start: 2rem; */
   }
 
   .contact__grid {
@@ -516,7 +517,7 @@ button {
   }
 
   .contact__message {
-    margin-inline: 1rem;
+    margin-inline: 2rem;
   }
 
   .contact__container--form {
