@@ -10,7 +10,9 @@ html,
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  border: 1px solid blue;
+  /* min-height: 100vh; */
+  max-width: 100vw;
   font-family: "Assistant", sans-serif;
   background: #faf8f7;
   color: rgba(0, 0, 0, 0.8);
@@ -98,7 +100,7 @@ button {
   justify-content: center;
   align-content: center;
   margin-inline: auto;
-  position: relative;
+  /* position: relative; */
   gap: 1.5rem;
 }
 
@@ -125,7 +127,9 @@ button {
 }
 
 .intro__photo {
-  max-width: clamp(20rem, 45vw, 27rem);
+  max-width: clamp(10rem, 45vw, 27rem);
+  /* max-width: 27rem; */
+  /* min-width: 200px; */
   border-radius: 20px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
@@ -156,7 +160,7 @@ button {
   margin-block: 5rem;
   align-content: center;
   font-size: clamp(1rem, 2vw, 1.2rem);
-  margin-inline: auto;
+  margin-inline: 2rem;
 }
 
 .contact__grid {
@@ -451,7 +455,7 @@ button {
   }
 
   .intro__portrait {
-    margin: 2rem;
+    /* margin: 2rem; */
     justify-self: center;
     align-self: center;
   }
@@ -466,6 +470,7 @@ button {
 
   .intro__name {
     font-size: 2.3rem;
+    white-space: wrap;
   }
 
   .research {
@@ -496,13 +501,14 @@ button {
     justify-content: space-around;
   }
 
-  .intro__photo {
+  /* .intro__photo {
     max-width: 350px;
-  }
+  } */
 
   .contact {
     display: flex;
-    justify-content: center;
+    justify-self: center;
+    /* align-self: center; */
   }
 
   .contact__grid {
