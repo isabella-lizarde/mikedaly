@@ -13,11 +13,11 @@ const observer = new IntersectionObserver(
       if (entry.isIntersecting) {
         entry.target.classList.add("fade-in");
       } else {
-        entry.target.classList.remove("fade-in"); // Remove class when out of view
+        entry.target.classList.remove("fade-in");
       }
     });
   },
-  { threshold: 0.1 }
+  { threshold: 0.3 }
 );
 
 sections.forEach((section) => observer.observe(section));
