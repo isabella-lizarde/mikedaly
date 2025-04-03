@@ -1,5 +1,5 @@
-:root {
-}
+/* :root {
+} */
 
 * {
   margin: 0;
@@ -208,7 +208,7 @@ button {
 }
 
 .contact__form {
-  min-width: 100%;
+  min-width: 90%;
   justify-self: center;
   padding: 20px;
   background: #f9f9f9;
@@ -318,10 +318,6 @@ button {
 
 .research__list li::marker {
   font-weight: bold;
-}
-
-.research__summary {
-  /* max-height: fit-content; */
 }
 
 .research__description {
@@ -488,7 +484,6 @@ button {
   .research__topic,
   .research__plan {
     padding: 2rem;
-    /* border: 1px solid blue; */
   }
 
   .intro {
