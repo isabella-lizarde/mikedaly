@@ -670,6 +670,11 @@ button {
   cursor: pointer;
 }
 
+.intro {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 .intro__grid {
   display: -ms-grid;
   display: grid;
