@@ -670,10 +670,12 @@ button {
   cursor: pointer;
 }
 
-.intro {
+/* .intro {
   display: grid;
   grid-template-columns: 1fr;
-}
+  display: -ms-grid;
+  -ms-grid-columns: 1fr 1.5rem 1fr;
+} */
 
 .intro__grid {
   display: -ms-grid;
@@ -1195,6 +1197,13 @@ button {
     margin-inline: 0.5rem;
     font-size: 0.85rem;
     color: orange;
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr;
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1.5rem 1fr;
   }
 
   .intro__grid {
