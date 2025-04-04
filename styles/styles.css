@@ -561,6 +561,7 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   max-width: 100vw;
+  max-width: 100%;
   font-family: "Assistant", sans-serif;
   background: #faf8f7;
   color: rgba(0, 0, 0, 0.8);
@@ -600,6 +601,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 100%;
   max-width: 100vw;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
@@ -609,11 +611,14 @@ button {
   align-items: center;
   min-height: 3rem;
   color: rgba(0, 0, 0, 0.9);
+  margin-left: auto;
+  margin-right: auto;
   margin-inline: 2rem;
 }
 
 .header__name {
   -webkit-margin-end: auto;
+  margin-right: auto;
   margin-inline-end: auto;
   font-size: 1.1rem;
 }
@@ -624,6 +629,7 @@ button {
   display: flex;
   list-style: none;
   gap: 3rem;
+  margin-bottom: 3rem;
 }
 
 .header__link {
@@ -645,7 +651,11 @@ button {
 
 .intro {
   max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
   margin-inline: auto;
+  margin-top: auto;
+  margin-bottom: auto;
   margin-block: auto;
 }
 
@@ -672,8 +682,11 @@ button {
   justify-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-inline: auto;
   gap: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .intro__about {
@@ -704,13 +717,18 @@ button {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
   margin-inline: 2rem;
   font-size: clamp(1rem, 1.4vw, 1.2rem);
   gap: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .intro__photo {
   max-width: clamp(10rem, 45vw, 27rem);
+  max-width: 27rem;
+  min-width: 10rem;
   border-radius: 20px;
   -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
@@ -745,10 +763,14 @@ button {
 
 .contact {
   max-width: 1800px;
+  margin-top: auto;
+  margin-bottom: auto;
   margin-block: 5rem;
   -ms-flex-line-pack: center;
   align-content: center;
   font-size: clamp(1rem, 2vw, 1.2rem);
+  margin-left: auto;
+  margin-right: auto;
   margin-inline: 2rem;
 }
 
@@ -758,6 +780,8 @@ button {
   max-width: 1800px;
   -ms-grid-columns: 1fr 1rem 1fr;
   grid-template-columns: repeat(2, 1fr);
+  margin-left: auto;
+  margin-right: auto;
   margin-inline: auto;
   gap: 1rem;
 }
@@ -771,8 +795,11 @@ button {
   -ms-grid-rows: 1fr 1rem 3fr;
   grid-template-rows: 1fr 3fr;
   gap: 1rem;
+  margin-bottom: 1rem;
   -ms-grid-column-align: center;
   justify-self: center;
+  margin-top: auto;
+  margin-bottom: auto;
   margin-block: auto;
 }
 
@@ -796,6 +823,8 @@ button {
 .contact__message {
   max-width: 90%;
   margin-inline: auto;
+  margin-left: auto;
+  margin-right: auto;
   min-height: calc(100% - 5.5rem);
   text-align: center;
   -webkit-hyphens: auto;
@@ -810,6 +839,7 @@ button {
 
 .contact__text--email {
   -webkit-margin-after: 1rem;
+  margin-bottom: 1rem;
   margin-block-end: 1rem;
 }
 
@@ -879,9 +909,12 @@ button {
   -ms-grid-rows: auto;
   grid-template-rows: auto;
   max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   margin-inline: auto;
   font-size: clamp(1rem, 2vw, 1.2rem);
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .research > *:nth-child(1) {
@@ -893,6 +926,8 @@ button {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
   margin-inline: auto;
   -ms-grid-column-span: 4;
   grid-column: span 4;
@@ -903,11 +938,15 @@ button {
 .research__header {
   font-size: clamp(1.4rem, 3vw, 1.55rem);
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-inline: auto;
 }
 
 .research__header--list {
   font-size: clamp(1.2rem, 1.7vw, 1.3rem);
+  margin-top: auto;
+  margin-bottom: auto;
   margin-block: 1rem;
   font-weight: 700;
 }
@@ -916,6 +955,8 @@ button {
   -ms-grid-column-span: 4;
   grid-column: span 4;
   max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   margin-inline: auto;
   -ms-grid-column-align: center;
   justify-self: center;
@@ -932,6 +973,8 @@ button {
   -ms-grid-column-span: 4;
   grid-column: span 4;
   max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   margin-inline: auto;
   -ms-grid-column-align: center;
   justify-self: center;
@@ -945,6 +988,7 @@ button {
 }
 
 .research__container {
+  margin-bottom: 1rem;
   gap: 1rem;
   -webkit-margin-before: 1rem;
   margin-block-start: 1rem;
@@ -973,21 +1017,29 @@ button {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-inline: auto;
 }
 
 .research__thanks {
   text-align: center;
   max-width: 10ch;
+  margin-left: auto;
+  margin-right: auto;
   margin-inline: auto;
   -webkit-margin-before: 3rem;
   margin-block-start: 3rem;
+  margin-top: 3rem;
   -webkit-margin-after: 1.5rem;
   margin-block-end: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .research__photo {
   max-width: clamp(5rem, 50vw, 8rem);
+  max-width: 8rem;
+  min-width: 5rem;
 }
 
 .footer {
@@ -996,6 +1048,7 @@ button {
 
 .footer__text {
   -webkit-margin-after: 1rem;
+  margin-bottom: 1rem;
   margin-block-end: 1rem;
   color: rgba(0, 0, 0, 0.8);
   -webkit-transition: color 0.3s ease-in-out;
@@ -1032,9 +1085,13 @@ button {
 
 @media (width <= 1000px) {
   .research {
+    margin-top: auto;
+    margin-bottom: auto;
     margin-block: 1.5rem;
     min-height: 100vh;
     min-width: 100vw;
+    min-width: 100%;
+    min-height: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1058,8 +1115,10 @@ button {
 @media (width <= 882px) {
   .header {
     -webkit-margin-start: 1.5rem;
+    margin-left: 1.5rem;
     margin-inline-start: 1.5rem;
     -webkit-margin-end: 0rem;
+    margin-right: 0rem;
     margin-inline-end: 0rem;
   }
   .header__nav {
@@ -1105,6 +1164,7 @@ button {
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-margin-end: 1rem;
+    margin-right: 1rem;
     margin-inline-end: 1rem;
     display: none;
   }
@@ -1118,11 +1178,15 @@ button {
     -ms-flex-direction: row;
     flex-direction: row;
     -webkit-padding-start: 0.5rem;
+    padding-left: 0.5rem;
     padding-inline-start: 0.5rem;
     gap: 1rem;
+    margin-bottom: 1rem;
   }
 
   .header__item {
+    margin-left: auto;
+    margin-right: auto;
     margin-inline: 0.5rem;
     font-size: 0.85rem;
     color: orange;
@@ -1132,6 +1196,7 @@ button {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 2rem;
+    margin-bottom: 2rem;
   }
 
   .intro__portrait {
@@ -1140,6 +1205,14 @@ button {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
+  }
+
+  .intro__photo {
+    max-width: 70%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-inline: auto;
   }
 
   .intro__about {
@@ -1158,8 +1231,10 @@ button {
 
   .research {
     -webkit-margin-before: 5rem;
+    margin-top: 5rem;
     margin-block-start: 5rem;
     gap: 2.5rem;
+    margin-bottom: 2.5rem;
   }
 
   .research__header {
@@ -1168,6 +1243,7 @@ button {
 
   .research__list {
     -webkit-padding-start: 1rem;
+    padding-left: 1rem;
     padding-inline-start: 1rem;
   }
 
@@ -1183,12 +1259,14 @@ button {
   .intro__text {
     line-height: 1.7;
     font-size: clamp(1.1rem, 3vw, 1.3rem);
+    font-size: 1.1rem;
     -ms-flex-pack: distribute;
     justify-content: space-around;
   }
 
   .intro__photo {
     -webkit-margin-before: 1rem;
+    margin-top: 1rem;
     margin-block-start: 1rem;
   }
 
@@ -1198,6 +1276,8 @@ button {
     display: flex;
     -ms-grid-column-align: center;
     justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-inline: auto;
   }
 
@@ -1205,14 +1285,18 @@ button {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     min-width: 100vw;
+    min-width: 100%;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     gap: 2.5rem;
+    margin-bottom: 2.5rem;
   }
 
   .contact__container {
     margin-inline: auto;
+    margin-right: auto;
+    margin-left: auto;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -1221,6 +1305,8 @@ button {
   }
 
   .contact__message {
+    margin-left: auto;
+    margin-right: auto;
     margin-inline: 2rem;
   }
 
@@ -1228,6 +1314,8 @@ button {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-inline: auto;
     min-width: 90%;
   }
