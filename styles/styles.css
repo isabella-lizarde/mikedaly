@@ -259,9 +259,8 @@ button {
 
 .research {
   min-height: calc(100vh - 3rem);
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  display: flex;
+  flex-direction: column;
   max-width: 1800px;
   margin-inline: auto;
   font-size: clamp(1rem, 2vw, 1.2rem);
@@ -271,7 +270,7 @@ button {
 .research__welcome {
   max-width: fit-content;
   margin-inline: auto;
-  grid-column: span 4;
+  /* grid-column: span 4; */
   font-size: 2rem;
   text-align: center;
 }
@@ -289,12 +288,10 @@ button {
 }
 
 .research__topic {
-  grid-column: span 4;
-  min-width: 80%;
-  margin-inline: auto;
-  /* justify-self: center; */
-  align-content: center;
-  justify-items: center;
+  max-width: 1200px;
+  margin-inline: 1.5rem;
+  align-self: center;
+  justify-self: center;
   background: #fcfcff;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
@@ -302,12 +299,9 @@ button {
 }
 
 .research__plan {
-  grid-column: span 4;
-  max-width: 80%;
-  margin-inline: auto;
-  /* justify-self: center; */
-  justify-items: center;
-  align-content: center;
+  max-width: 1200px;
+  align-self: center;
+  margin-inline: 1.5rem;
   background: #fcfcff;
   border-radius: 10px;
   padding: 3rem;
@@ -490,13 +484,11 @@ button {
     margin: 1rem;
     max-width: 85% !important;
     justify-self: center;
-    /* margin-inline: auto; */
   }
 
   .contact {
     justify-self: center;
     margin-inline: auto;
-    /* max-width: 80%; */
   }
 
   .contact__grid {
