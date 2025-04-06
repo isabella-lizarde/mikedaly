@@ -72,7 +72,6 @@ button {
 
 .intro {
   display: flex;
-
   min-height: calc(100vh - 3rem);
   max-width: 1800px;
   margin-inline: auto;
@@ -432,8 +431,14 @@ button {
     color: orange;
   }
 
+  .intro {
+    /* display: block; */
+    /* flex-direction: column; */
+  }
+
   .intro__container {
-    flex-direction: column;
+    /* display: block; */
+    flex-direction: column !important;
   }
 
   .intro__portrait {
@@ -483,7 +488,7 @@ button {
   .research__plan {
     padding: 2rem;
     margin: 1rem;
-    max-width: 85%;
+    max-width: 85% !important;
     justify-self: center;
     /* margin-inline: auto; */
   }
@@ -497,7 +502,7 @@ button {
   .contact__grid {
     display: flex;
     /* min-width: 80%; */
-    flex-direction: column;
+    flex-direction: column !important;
     justify-content: center;
     gap: 2.5rem;
   }
