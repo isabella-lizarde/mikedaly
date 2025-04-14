@@ -31,7 +31,7 @@ h4 {
   letter-spacing: 0.05rem;
 }
 
-.section {
+.section--fade {
   opacity: 0;
   transform: translateY(1.7rem);
   transition: opacity 1s ease-out, transform 1s ease-out;

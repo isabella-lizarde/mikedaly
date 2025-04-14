@@ -5,7 +5,7 @@ document
   .getElementById("contact__email")
   .setAttribute("href", `mailto:${emailUser}@${emailDomain}`);
 
-const sections = document.querySelectorAll(".section");
+const sections = document.querySelectorAll(".section--fade");
 
 const observer = new IntersectionObserver(
   (entries) => {
