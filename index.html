@@ -64,23 +64,17 @@
           </li>
         </ul>
         <div class="header__menu" id="header__menu">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span class="header__bar"></span>
+          <span class="header__bar"></span>
+          <span class="header__bar"></span>
         </div>
-        <!-- <button class="header__icon--open">
-          <i class="header__bars fa-solid fa-bars"></i>
-        </button>
-         <button class="header__icon--close">
-          <i class="header__xmark fa-solid fa-xmark"></i>
-        </button> -->
       </nav>
     </header>
     <main>
       <section class="intro section" id="intro">
-        <div class="intro__container">
-          <div class="intro__item intro__portrait">
-            <picture>
+        <div class="intro__container--section">
+          <div class="intro__item intro__container--photo">
+            <picture class="intro__responsive-image">
               <source
                 srcset="/images/daly-portrait-mobile.jpg"
                 media="(max-width: 882px)"
@@ -99,7 +93,7 @@
             <div class="intro__header">
               <h2 class="intro__name">Hi, I'm Mike Daly.</h2>
             </div>
-            <div class="intro__summary">
+            <div class="intro__summary section">
               <p class="intro__text">
                 I'm a 3rd year doctoral student here at University of the
                 Pacific and I also work in the Graduate Admissions Office. I
@@ -138,7 +132,7 @@
         <div class="research__intro">
           <h3 class="research__header">My Research Study</h3>
         </div>
-        <section class="research__topic">
+        <section class="research__section">
           <h4 class="research__title research__header--col1">
             Research Topic
           </h4>
@@ -176,7 +170,7 @@
             </div>
           </div>
         </section>
-        <section class="research__plan">
+        <section class="research__section">
           <h4 class="research__title research__header--col2">
             Research Plan
           </h4>
@@ -246,18 +240,18 @@
                 value="New message from %{formName}"
               />
               <p>
-                <input type="hidden" name="form-name" value="contact" />
+                <input type="hidden" name="form-name" value="contact" class="contact__input" />
 
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required />
+                <label for="name" class="contact__label">Name:</label>
+                <input type="text" id="name" name="name"  class="contact__input" required />
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required />
+                <label for="email" class="contact__label">Email:</label>
+                <input type="email" id="email" name="email" class="contact__input" required />
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
+                <label for="message" class="contact__label">Message:</label>
+                <textarea id="message" name="message" class="contact__textarea" required></textarea>
 
-                <button type="submit">Send</button>
+                <button type="submit" class="contact__submit">Send</button>
               </p>
             </form>
           </div>
