@@ -284,7 +284,7 @@ h4 {
   text-align: center;
 }
 
-.research__header--list {
+.research__header-list {
   margin-block: 1rem;
   font-weight: 700;
 }
@@ -418,7 +418,6 @@ h4 {
     display: none;
     flex-direction: column;
     min-width: 100vw;
-    /* min-height: 15vh; */
     align-items: end;
     padding: 0;
     margin: 0;
